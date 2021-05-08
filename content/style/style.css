@@ -1,21 +1,27 @@
 /* fonts */
 @font-face {
   font-family: Poppins;
-  src: url('../assets/fonts/Poppins/Poppins-Regular.eot'), format('eot');
-  src: url('../assets/fonts/Poppins/Poppins-Regular.woff'), format('woff');
-  src: url('../assets/fonts/Poppins/Poppins-Regular.woff2'), format('woff2');
-  src: url('../assets/fonts/Poppins/Poppins-Regular.ttf'), format('ttf');
-  src: url('../assets/fonts/Poppins/Poppins-Regular.svg'), format('svg');
+  src: url("../assets/fonts/Poppins/Poppins-Regular.eot"), format("eot");
+  src: url("../assets/fonts/Poppins/Poppins-Regular.woff"), format("woff");
+  src: url("../assets/fonts/Poppins/Poppins-Regular.woff2"), format("woff2");
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf"), format("ttf");
+  src: url("../assets/fonts/Poppins/Poppins-Regular.svg"), format("svg");
 }
 
 /* global */
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins;
+}
 
+:root {
+  --mainColor: #086efd;
+  --mainWhite: #fff;
+  --mainDark: #202529;
+  --mainTransition: all 0.5s linear;
 }
 
 body {
@@ -31,6 +37,7 @@ h2,
 h3,
 h4 {
   font-weight: 500;
+  margin: 0;
 }
 
 a {
@@ -46,29 +53,105 @@ li {
 }
 
 /* header */
+header {
+  height: 100vh;
+  background: var(--mainDark);
+  position: relative;
+}
+.header__img {
+  position: absolute;
+  right: 4%;
+  bottom: 0;
+  width: 50rem;
+}
+
 /* nav */
 nav{
-  background-color: red;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  z-index: 1;
+}
+nav a {
+  color: var(--mainWhite);
+}
+.nav__logo:hover {
+  color: var(--mainWhite);
+}
+.nav__logo img {
+  width: 30px;
+  margin-right: 5px;
 }
 
-.nav__links a {
-  color: #fff;
-  margin-left: 10px;
-}
-.nav__logo img{
-  width: 50px;
-}
-.nav__logo a{
-  color: #fff;
+.nav-link {
+  border-radius: 5px;
+  transition: var(--mainTransition);
   text-transform: capitalize;
-  letter-spacing: 2px;
 }
-.nav__logo a:hover{
-  color: #fff;
+.nav-link:hover {
+  background: var(--mainColor);
+  color: var(--mainWhite);
 }
-
 
 /* end of nav */
+
+/* hero */
+.hero {
+  position: absolute;
+  top: 50%;
+  transform: translate(5%, -50%);
+  color: var(--mainWhite);
+  text-transform: capitalize;
+}
+
+.hero h3 {
+  font-weight: 400;
+}
+
+.hero h1 {
+  font-size: 4rem;
+}
+
+.hero h4 {
+  font-size: 2rem;
+}
+.hero h4 span {
+  color: var(--mainColor);
+}
+
+.hero .btns {
+  margin-top: 1rem;
+}
+.hero .btns a {
+  margin: 0 5px;
+  color: var(--mainWhite);
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  background: var(--mainColor);
+  border: 1px solid var(--mainColor);
+  transition: var(--mainTransition);
+}
+.hero .btns a:hover {
+  background: none;
+}
+/* end of hero */
+
+/* icons */
+.header__icons{
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  
+  
+}
+.header__icons a{
+  margin: 0 5px;
+  color: var(--mainWhite);
+  font-size: 20px;
+  cursor: pointer;
+  transition: var(--mainTransition);
+}
+.header__icons a:hover{
+  color: var(--mainColor);
+}
+
+
+/* end of icons */
 /* end ofheader */
