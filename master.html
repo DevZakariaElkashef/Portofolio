@@ -27,7 +27,7 @@
 <body>
 
     <!-- header -->
-    <header class="main-header" id="home">
+    <header class="main-header overflow-hidden" id="home">
         <!-- nav -->
         <nav class="navbar navbar-expand-lg  fixed-top">
             <div class="container ">
@@ -36,7 +36,9 @@
                     Zakaria Elkashef
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
                 </button>
                 <div class="collapse navbar-collapse text" id="navbarNav">
                     <ul class="navbar-nav ms-auto text-center">
@@ -63,25 +65,97 @@
             </div>
         </nav>
         <!-- end of nav -->
-        
-        <img class="header__img" src="./content/assets/images/Remini20210507223632772.png" alt="header__img">
-        <div class="hero container">
-            <h3>hello, my name is</h3>
-            <h1>Zakaria Elkashef</h1>
-            <h4>and i'm a <span id="type-1"></span></h4>
-            <div class="btns">
-                <a href="#contant" class="main-btn">hire me </a>
-                <a href="#" class="main-btn">download cv </a>
+        <!-- banner -->
+        <div class="banner">
+            <img class="header__img" src="./content/assets/images/Remini20210507223632772.png" alt="header__img">
+            <div class="hero ">
+                <h3>hello, my name is</h3>
+                <h1>Zakaria Elkashef</h1>
+                <h4>and i'm a <span id="type-1"></span></h4>
+                <div class="btns">
+                    <a href="#contant" class="main-btn">hire me </a>
+                    <a href="#" class="main-btn">download cv </a>
+                </div>
             </div>
+            <div class="header__icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            
         </div>
-        <div class="header__icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
+        <!-- end of banner -->
     </header>
     <!-- end of header -->
+
+    <!-- main -->
+    <main class="main-section">
+        <!-- about-section -->
+        <section class="about-section " id="about">
+            <div class="container ">
+           
+                    <h2>about me</h2>
+                  
+
+                
+                <div class="row align-items-center ">
+                    <div class="col-md-6">
+                        <div class="about-div-img">
+                            <img src="./content/assets/images/Remini20210507223632772.jpg" alt="my-pic">
+                        </div>
+                    </div>
+                    <div class="col-md-6 about__text">
+                        <h3>i'm a <span id="type-2"></span></h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia enim eum, consequuntur debitis dolorem maxime. Veritatis aliquam, atque cupiditate, error temporibus autem quos quasi nihil, earum excepturi odio. Tempore, natus?</p>
+                        <div class="btns">
+                            <a href="#contant" class="main-btn">hire me </a>
+                            <a href="#" class="main-btn">download cv </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of about-section -->
+        <!-- services section -->
+        <section class="services-section py-5">
+            <div class="container">
+                <h2>my services</h2>
+                <div class="row cards mt-3 g-5">
+                    <!-- single card -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <span class="serv__icon"><i class="fab fa-accusoft"></i></span>
+                            <h4>web devoloper</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quasi a vel! Ipsa</p>
+                        </div>
+                    </div>
+                    <!-- end of single card -->
+                    <!-- single card -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <span class="serv__icon"><i class="fas fa-chart-line"></i></span>
+                            <h4>advertising</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quasi a vel! Ipsa</p>
+                        </div>
+                    </div>
+                    <!-- end of single card -->
+                    <!-- single card -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <span class="serv__icon"><i class="fas fa-blender-phone"></i></span>
+                            <h4> app devolop</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quasi a vel! Ipsa</p>
+                        </div>
+                    </div>
+                    <!-- end of single card -->
+                    
+                </div>
+            </div>
+        </section>
+        <!-- end of services section -->
+    </main>
+    <!-- end of main -->
 
 
 

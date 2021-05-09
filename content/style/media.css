@@ -37,15 +37,29 @@
   .hero h4 {
     font-size: 1.5rem;
   }
+  .about-section .container{
+      text-align: center;
+  }
+  .about-div-img {
+    width: 300px;
+    margin: auto;
+  }
+  .about__text p {
+    width: 18rem;
+    margin: 2rem auto;
+  }
 }
 
+/* @media screen and (max-width:991px) {
+    
+} */
 @media screen and (max-width: 768px) {
   .header__img {
     width: 30rem;
     right: 2%;
   }
   .hero {
-    top: 40%;
+    top: 50%;
     transform: translate(1%, -50%);
   }
   .hero h1 {
@@ -55,8 +69,8 @@
   .hero h4 {
     font-size: 1.5rem;
   }
-  .header__icons{
-      left: 1%;
+  .header__icons {
+    left: 1%;
   }
 }
 @media screen and (max-width: 540px) {
@@ -65,7 +79,7 @@
     right: 1%;
   }
   .hero {
-    top: 40%;
+    top: 50%;
     transform: translate(1%, -50%);
   }
   .hero h1 {
@@ -92,7 +106,7 @@
   .hero h4 {
     font-size: 1.5rem;
   }
-  .header__icons{
-      display: none;
+  .header__icons {
+    display: none;
   }
 }
