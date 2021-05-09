@@ -1,3 +1,20 @@
+const navBar = document.querySelector(".navbar");
+const navHeight = navBar.getBoundingClientRect().height;
+window.addEventListener("scroll", () => {
+  const scrollHeight = window.pageYOffset;
+  if (scrollHeight > navHeight) {
+    navBar.classList.add("fix-nav");
+  } else {
+    navBar.classList.remove("fix-nav");
+  }
+});
+
+
+
+
+
+
+
 // typeit
 new TypeIt("#type-1", {
     speed: 120,
@@ -43,3 +60,5 @@ gsap.from(".header__icons a", {
   x: -30,
   stagger: 0.2,
 });
+
+AOS.init();

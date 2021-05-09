@@ -23,6 +23,10 @@
   --mainDark: #202529;
   --mainTransition: all 300ms ease-in-out;
   --boxShadow:  0 10px 10px rgba(0, 0, 0, 0.1);
+  --sectionPadding:5rem 0;
+}
+html{
+  scroll-behavior: smooth;
 }
 
 body {
@@ -85,6 +89,15 @@ h2::after{
   border-radius: 5px;
   z-index: 1;
 }
+.fix-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #086efd;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
 
 /* header */
 header {
@@ -102,7 +115,6 @@ header {
 /* nav */
 nav{
   z-index: 1;
-  background: #0869f0;
 }
 nav a {
   color: var(--mainWhite);
@@ -194,7 +206,7 @@ nav a {
 
 /* about section */
 .about-section{
-  padding: 5rem 0;
+  padding: var(--sectionPadding);
 }
 .about-div-img{
   width: 400px;
@@ -228,6 +240,8 @@ nav a {
 .services-section{
   background: var(--mainDark);
   color: var(--mainWhite);
+  padding: var(--sectionPadding);
+
 }
 .services-section .card{
   background: #111;
@@ -258,3 +272,102 @@ nav a {
 }
 
 /* end of services section */
+
+
+/* skills section  */
+.skills-section{
+  padding: var(--sectionPadding);
+
+}
+.skills-bar .bar{
+  margin-bottom: 1rem ; 
+  overflow: hidden;
+}
+.skills-bar .bar .line{
+  height: 7px;
+  border-radius: 5px;
+  background: rgba(128, 128, 128, 0.445);
+  position: relative;
+  
+}
+.bar .line .progress{
+  height: 100%;
+  background: var(--mainColor);
+  
+}
+.html{
+width: 95%;
+}
+.css{
+width: 90%;
+}
+.js{
+width: 80%;
+}
+.jquery{
+width: 50%;
+}
+.line span{
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+}
+
+.skills__text{
+  padding: 20px;
+}
+.skills__text p{
+  margin: 1rem 0;
+}
+/* end of skills section  */
+
+/* contact section */
+.contact-section{
+  padding: var(--sectionPadding);
+}
+.send-message h4{
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.send-message .contact-form input{
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  outline: none;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 0 5px;
+}
+.send-message .contact-form textarea{
+  width: 100%;
+  padding: 0 5px;
+  margin-bottom: 0.5rem;
+  outline: none;
+  border-radius: 3px;
+}
+.send-message .contact-form button{
+
+  text-transform: capitalize;
+}
+.send-message .contact-form button:hover{
+  color: var(--mainDark);
+}
+/* end of contact section */
+
+/* footer */
+.main-footer{
+  background: var(--mainDark);
+  color: var(--mainWhite);
+  padding: 1rem;
+}
+.main-footer p{
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.main-footer p span{
+  color: var(--mainColor);
+  font-weight: bolder;
+}
