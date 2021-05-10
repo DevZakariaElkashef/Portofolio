@@ -31,7 +31,7 @@
         <!-- nav -->
         <nav class="navbar navbar-expand-lg  fixed-top">
             <div class="container ">
-                <a class="navbar-brand nav__logo" href="#">
+                <a class="navbar-brand nav__logo" href="#contact">
                     <img class="logo" src="./content/assets/images/favicon_io/apple-touch-icon.png" alt="nav-logo">
                     Zakaria Elkashef
                 </a>
@@ -49,10 +49,10 @@
                             <a class="nav-link" href="#about">about</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skills">skills</a>
+                            <a class="nav-link" href="#services">services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#services">services</a>
+                            <a class="nav-link" href="#skills">skills</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#porjects">porjects</a>
@@ -67,23 +67,26 @@
         <!-- end of nav -->
         <!-- banner -->
         <div class="banner">
-            <img class="header__img" src="./content/assets/images/Remini20210507223632772.png" alt="header__img">
-            <div class="hero ">
-                <h3>hello, my name is</h3>
-                <h1>Zakaria Elkashef</h1>
-                <h4>and i'm a <span id="type-1"></span></h4>
-                <div class="btns">
-                    <a href="#contant" class="main-btn">hire me </a>
-                    <a href="#" class="main-btn">download cv </a>
+            <div class="container">
+                <div class="row">
+                    <img class="header__img" src="./content/assets/images/Remini20210507223632772.png" alt="header__img">
+                    <div class="hero ">
+                        <h3>hello, my name is</h3>
+                        <h1>Zakaria Elkashef</h1>
+                        <h4>and i'm a <span id="type-1"></span></h4>
+                        <div class="btns">
+                            <a href="#contant" class="main-btn">hire me </a>
+                            <a href="#" class="main-btn">download cv </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
-            <div class="header__icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-            </div>
-            
         </div>
         <!-- end of banner -->
     </header>
@@ -92,13 +95,9 @@
     <!-- main -->
     <main class="main-section">
         <!-- about-section -->
-        <section class="about-section " id="about">
+        <section class="about-section overflow-hidden " id="about">
             <div class="container ">
-           
-                    <h2>about me</h2>
-                  
-
-                
+                <h2>about me</h2>
                 <div class="row align-items-center ">
                     <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
                         <div class="about-div-img">
@@ -117,61 +116,13 @@
             </div>
         </section>
         <!-- end of about-section -->
-        <!-- skills section -->
-        <section class="skills-section" id="skills">
-            <div class="container">
-                <h2>my skills</h2>
-                <div class="row ">
-                    <div class="col-md-6">
-                        <div class="skills-bar">
-                            <div class="bar">
-                                <p>HTML5</p>
-                                <div class="line">
-                                    <div class="progress html" ></div>
-                                    <span>95%</span>
-                                </div>
-                            </div>
-                            <div class="bar">
-                                <p>CSS</p>
-                                <div class="line">
-                                    <div class="progress css"></div>
-                                    <span>90%</span>
-                                </div>
-                            </div>
-                            <div class="bar">
-                                <p>JS</p>
-                                <div class="line">
-                                    <div class="progress js"></div>
-                                    <span>80%</span>
-                                </div>
-                            </div>
-                            <div class="bar">
-                                <p>JQuery</p>
-                                <div class="line">
-                                    <div class="progress jquery"></div>
-                                    <span>50%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="skills__text">
-                            <h3>My creative skills and experience</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, praesentium incidunt molestiae corporis impedit veritatis, cupiditate autem atque quasi deserunt reiciendis quas unde vero dolorum aliquid placeat vitae laboriosam laudantium.</p>
-                            <a href="#" class="main-btn">read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end of skills section -->
         <!-- services section -->
-        <section class="services-section py-5" id="services">
+        <section class="services-section overflow-hidden py-5" id="services">
             <div class="container">
                 <h2>my services</h2>
                 <div class="row cards mt-3 g-5">
                     <!-- single card -->
-                    <div class="col-md-4">
+                    <div class="col-md-4"  data-aos="fade-up" data-aos-duration="2000">
                         <div class="card">
                             <span class="serv__icon"><i class="fab fa-accusoft"></i></span>
                             <h4>web devoloper</h4>
@@ -180,7 +131,7 @@
                     </div>
                     <!-- end of single card -->
                     <!-- single card -->
-                    <div class="col-md-4">
+                    <div class="col-md-4"  data-aos="fade-down" data-aos-duration="2000">
                         <div class="card">
                             <span class="serv__icon"><i class="fas fa-chart-line"></i></span>
                             <h4>advertising</h4>
@@ -189,7 +140,7 @@
                     </div>
                     <!-- end of single card -->
                     <!-- single card -->
-                    <div class="col-md-4">
+                    <div class="col-md-4"  data-aos="fade-up" data-aos-duration="2000">
                         <div class="card">
                             <span class="serv__icon"><i class="fas fa-blender-phone"></i></span>
                             <h4> app devolop</h4>
@@ -201,15 +152,82 @@
                 </div>
             </div>
         </section>
+
+
         <!-- end of services section -->
+        <!-- skills section -->
+        <section class="skills-section overflow-hidden" id="skills">
+            <div class="container">
+                <h2>my skills</h2>
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="skills-bar">
+                            <div class="bar">
+                                <p>HTML5</p>
+                                <div class="line">
+                                    <div class="progress html" data-aos="fade-right" data-aos-duration="2000"></div>
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <p>CSS</p>
+                                <div class="line">
+                                    <div class="progress css" data-aos="fade-right" data-aos-duration="2000"></div>
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <p>JS</p>
+                                <div class="line">
+                                    <div class="progress js" data-aos="fade-right" data-aos-duration="2000"></div>
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <p>JQuery</p>
+                                <div class="line">
+                                    <div class="progress jquery" data-aos="fade-right" data-aos-duration="2000"></div>
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-left" data-aos-duration="2000">
+                        <div class="skills__text">
+                            <h3>My creative skills and experience</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, praesentium incidunt molestiae corporis impedit veritatis, cupiditate autem atque quasi deserunt reiciendis quas unde vero dolorum aliquid placeat vitae laboriosam laudantium.</p>
+                            <a href="#" class="main-btn">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of skills section -->
         <!-- contact section -->
-        <section class="contact-section" id="contact">
+        <section class="contact-section overflow-hidden" id="contact">
             <div class="container">
                 <h2>contact me</h2>
-                <div class="row">
-                    <div class="col-md-6"></div>
-                    <div class="col-md-6 send-message">
+                <div class="row ">
+                    <div class="col-md-6 get-touch"  data-aos="fade-down-right" data-aos-duration="2000">
                         <h4>get in touch</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa perferendis nisi sed pariatur. Illum, vel quod magni eos, quasi beatae odit labore eaque rem enim facere et accusantium veritatis incidunt.</p>
+                        <div class="contact__icons">
+                            <div class=" ">
+                                <span class="contact__icon"><i class="fas fa-user"></i></span>
+                                <span>Name<br>Zakaria Elkashef</span>
+                            </div>
+                            <div>
+                                <span class="contact__icon"><i class="fas fa-map-marker-alt"></i></span>
+                                <span>Address<br>Egypt</span>
+                            </div>
+                            <div>
+                                <span class="contact__icon"><i class="fas fa-envelope"></i></span>
+                                <span>Email<br>zakariaelkashef2020@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 send-message"  data-aos="fade-up-left" data-aos-duration="2000">
+                        <h4>message me</h4>
                         <div class="contact-form">
                             <form>
                                 <input type="text" placeholder="Name">

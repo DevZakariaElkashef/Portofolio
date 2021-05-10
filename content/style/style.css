@@ -22,10 +22,10 @@
   --mainWhite: #fff;
   --mainDark: #202529;
   --mainTransition: all 300ms ease-in-out;
-  --boxShadow:  0 10px 10px rgba(0, 0, 0, 0.1);
-  --sectionPadding:5rem 0;
+  --boxShadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  --sectionPadding: 5rem 0;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -57,8 +57,7 @@ li {
   list-style: none;
 }
 
-.main-btn{
-
+.main-btn {
   color: var(--mainWhite);
   padding: 0.5rem 1rem;
   border-radius: 2px;
@@ -70,14 +69,14 @@ li {
 .main-btn:hover {
   background: none;
 }
-h2{
+h2 {
   text-align: center;
   margin: 3rem 0;
   text-transform: capitalize;
   position: relative;
 }
 
-h2::after{
+h2::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -105,15 +104,9 @@ header {
   background: var(--mainDark);
   position: relative;
 }
-.header__img {
-  position: absolute;
-  right: 4%;
-  bottom: 0;
-  width: 50rem;
-}
 
 /* nav */
-nav{
+nav {
   z-index: 1;
 }
 nav a {
@@ -136,23 +129,29 @@ nav a {
   background: var(--mainColor);
   color: var(--mainWhite);
 }
-.navbar-toggler-icon{
+.navbar-toggler-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 20px;
 }
-.navbar-toggler{
+.navbar-toggler {
   background: var(--mainColor);
   color: var(--mainWhite);
 }
 /* end of nav */
+.header__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50rem;
+}
 
 /* hero */
 .hero {
   position: absolute;
   top: 50%;
-  transform: translate(15%, -50%);
+  transform: translate(0, -50%);
   color: var(--mainWhite);
   text-transform: capitalize;
 }
@@ -181,73 +180,64 @@ nav a {
 /* end of hero */
 
 /* icons */
-.header__icons{
+.header__icons {
   position: absolute;
   bottom: 5%;
-  left: 5%;
-  
-  
 }
-.header__icons a{
+.header__icons a {
   margin: 0 5px;
   color: var(--mainWhite);
   font-size: 20px;
   cursor: pointer;
   transition: var(--mainTransition);
 }
-.header__icons a:hover{
+.header__icons a:hover {
   color: var(--mainColor);
 }
-
 
 /* end of icons */
 /* end ofheader */
 
-
 /* about section */
-.about-section{
+.about-section {
   padding: var(--sectionPadding);
 }
-.about-div-img{
+.about-div-img {
   width: 400px;
   overflow: hidden;
   border-radius: 5px;
   /* margin: auto; */
 }
 
-.about__text h3{
+.about__text h3 {
   margin: 1rem 0;
-  
 }
-.about__text p{
+.about__text p {
   text-align: justify;
   margin: 2rem 0;
-
 }
-.about__text h3 span{
+.about__text h3 span {
   color: var(--mainColor);
-  
 }
-.about__text .btns{
+.about__text .btns {
   margin: 1rem 0;
 }
-.about__text .btns a:first-child{
+.about__text .btns a:first-child {
   margin-left: 0;
 }
 /* end of about-section */
 
 /* services section */
-.services-section{
+.services-section {
   background: var(--mainDark);
+  padding: var(--sectionPadding) !important;
   color: var(--mainWhite);
-  padding: var(--sectionPadding);
-
 }
-.services-section .card{
+.services-section .card {
   background: #111;
   text-transform: capitalize;
   text-align: center;
-  margin:0 6px;
+  margin: 0 6px;
   padding: 10px 20px;
   line-height: 1.5;
   border-radius: 1rem;
@@ -255,81 +245,93 @@ nav a {
   box-shadow: var(--boxShadow);
 }
 
-.serv__icon{
+.serv__icon {
   font-size: 40px;
   color: var(--mainColor);
   transition: var(--mainTransition);
-
 }
-.services-section .card h4{
+.services-section .card h4 {
   margin: 0.8rem 0;
 }
-.services-section .card:hover{
+.services-section .card:hover {
   background: var(--mainColor);
 }
-.services-section .card:hover .serv__icon{
+.services-section .card:hover .serv__icon {
   color: var(--mainWhite);
 }
 
 /* end of services section */
 
-
 /* skills section  */
-.skills-section{
+.skills-section {
   padding: var(--sectionPadding);
-
 }
-.skills-bar .bar{
-  margin-bottom: 1rem ; 
+.skills-bar .bar {
+  margin-bottom: 1rem;
   overflow: hidden;
 }
-.skills-bar .bar .line{
+.skills-bar .bar .line {
   height: 7px;
   border-radius: 5px;
   background: rgba(128, 128, 128, 0.445);
   position: relative;
-  
 }
-.bar .line .progress{
+.bar .line .progress {
   height: 100%;
   background: var(--mainColor);
   
 }
-.html{
-width: 95%;
+
+.html {
+  width: 95%;
 }
-.css{
-width: 90%;
+.css {
+  width: 90%;
 }
-.js{
-width: 80%;
+.js {
+  width: 80%;
 }
-.jquery{
-width: 50%;
+.jquery {
+  width: 50%;
 }
-.line span{
+.line span {
   position: absolute;
   right: 0;
   bottom: 10%;
 }
 
-.skills__text{
+.skills__text {
   padding: 20px;
 }
-.skills__text p{
+.skills__text p {
   margin: 1rem 0;
 }
 /* end of skills section  */
 
 /* contact section */
-.contact-section{
+.contact-section {
   padding: var(--sectionPadding);
 }
-.send-message h4{
+.get-touch{
+  text-transform: capitalize;
+}
+.contact__icons > div{
+  display: flex;
+  align-items: center;
+}
+.contact__icons span{
+  display: block;
+}
+.contact__icon{
+  font-size: 28px;
+  margin-right: 20px;
+  color: var(--mainColor);
+}
+.send-message h4 {
   text-transform: capitalize;
   margin-bottom: 1rem;
 }
-.send-message .contact-form input{
+.send-message .contact-form input {
   display: block;
   width: 100%;
   margin-bottom: 0.5rem;
@@ -339,35 +341,34 @@ width: 50%;
   border-radius: 3px;
   padding: 0 5px;
 }
-.send-message .contact-form textarea{
+.send-message .contact-form textarea {
   width: 100%;
   padding: 0 5px;
   margin-bottom: 0.5rem;
   outline: none;
   border-radius: 3px;
 }
-.send-message .contact-form button{
-
+.send-message .contact-form button {
   text-transform: capitalize;
 }
-.send-message .contact-form button:hover{
+.send-message .contact-form button:hover {
   color: var(--mainDark);
 }
 /* end of contact section */
 
 /* footer */
-.main-footer{
+.main-footer {
   background: var(--mainDark);
   color: var(--mainWhite);
   padding: 1rem;
 }
-.main-footer p{
+.main-footer p {
   text-transform: capitalize;
   text-align: center;
   font-size: 18px;
   letter-spacing: 1px;
 }
-.main-footer p span{
+.main-footer p span {
   color: var(--mainColor);
   font-weight: bolder;
 }

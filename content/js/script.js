@@ -1,3 +1,4 @@
+// navbar
 const navBar = document.querySelector(".navbar");
 const navHeight = navBar.getBoundingClientRect().height;
 window.addEventListener("scroll", () => {
@@ -8,11 +9,6 @@ window.addEventListener("scroll", () => {
     navBar.classList.remove("fix-nav");
   }
 });
-
-
-
-
-
 
 
 // typeit
