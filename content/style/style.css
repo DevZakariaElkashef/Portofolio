@@ -102,47 +102,15 @@ h2::after {
 header {
   height: 100vh;
   background: var(--mainDark);
-  position: relative;
+  position: relative ;
+}
+header > .container{
+
 }
 
-/* nav */
-nav {
-  z-index: 1;
-}
-nav a {
-  color: var(--mainWhite);
-}
-.nav__logo:hover {
-  color: var(--mainWhite);
-}
-.nav__logo img {
-  width: 30px;
-  margin-right: 5px;
-}
-
-.nav-link {
-  border-radius: 5px;
-  transition: var(--mainTransition);
-  text-transform: capitalize;
-}
-.nav-link:hover {
-  background: var(--mainColor);
-  color: var(--mainWhite);
-}
-.navbar-toggler-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-}
-.navbar-toggler {
-  background: var(--mainColor);
-  color: var(--mainWhite);
-}
-/* end of nav */
 .header__img {
   position: absolute;
-  right: 0;
+  right: 0px;
   bottom: 0;
   width: 50rem;
 }
@@ -196,7 +164,43 @@ nav a {
 }
 
 /* end of icons */
-/* end ofheader */
+
+/* nav */
+nav {
+  z-index: 1;
+}
+nav a {
+  color: var(--mainWhite);
+}
+.nav__logo:hover {
+  color: var(--mainWhite);
+}
+.nav__logo img {
+  width: 30px;
+  margin-right: 5px;
+}
+
+.nav-link {
+  border-radius: 5px;
+  transition: var(--mainTransition);
+  text-transform: capitalize;
+}
+.nav-link:hover {
+  background: var(--mainColor);
+  color: var(--mainWhite);
+}
+.navbar-toggler-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.navbar-toggler {
+  background: var(--mainColor);
+  color: var(--mainWhite);
+}
+/* end of nav */
+/* end of header */
 
 /* about section */
 .about-section {
@@ -308,6 +312,33 @@ nav a {
 }
 /* end of skills section  */
 
+/* projects section */
+.projects-section{
+  background: var(--mainDark);
+  padding: var(--sectionPadding);
+  color: var(--mainWhite);
+}
+.project{
+  text-align: center;
+  width: 330px;
+  margin: auto;
+}
+.project img{
+  width: 100%;
+  border: 5px solid var(--mainColor);
+  border-radius: 5px;
+}
+.project p{
+  margin: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.project span{
+  font-size: 18px ;
+  letter-spacing: 1px;
+}
+/* end ofprojects section */
+
 /* contact section */
 .contact-section {
   padding: var(--sectionPadding);
@@ -321,12 +352,17 @@ nav a {
 }
 .contact__icons span{
   display: block;
+  
 }
-.contact__icon{
+.contact__icon {
   font-size: 28px;
-  margin-right: 20px;
   color: var(--mainColor);
+  width: 30px;
 }
+.conact__title{
+  margin-left: 15px;
+}
+
 .send-message h4 {
   text-transform: capitalize;
   margin-bottom: 1rem;
@@ -367,6 +403,7 @@ nav a {
   text-align: center;
   font-size: 18px;
   letter-spacing: 1px;
+  margin: 0;
 }
 .main-footer p span {
   color: var(--mainColor);

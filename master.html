@@ -55,7 +55,7 @@
                             <a class="nav-link" href="#skills">skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#porjects">porjects</a>
+                            <a class="nav-link" href="#projects">porjects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">contact</a>
@@ -203,6 +203,32 @@
             </div>
         </section>
         <!-- end of skills section -->
+        <!-- projects section -->
+        <section class="projects-section overflow-hidden" id="projects">
+            <div class="container">
+                <h2>my projects</h2>
+                <div class="glide-scroll">
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                          <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="project">
+                                    <img  src="./content/assets/images/projects/special-1.jpg" alt="coffe-project">
+                                    <p>coffe project</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="main-btn">view more</a>
+                                        <span>20$</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of projects section -->
         <!-- contact section -->
         <section class="contact-section overflow-hidden" id="contact">
             <div class="container">
@@ -214,26 +240,26 @@
                         <div class="contact__icons">
                             <div class=" ">
                                 <span class="contact__icon"><i class="fas fa-user"></i></span>
-                                <span>Name<br>Zakaria Elkashef</span>
+                                <span class="conact__title">Name<br>Zakaria Elkashef</span>
                             </div>
                             <div>
                                 <span class="contact__icon"><i class="fas fa-map-marker-alt"></i></span>
-                                <span>Address<br>Egypt</span>
+                                <span class="conact__title">Address<br>Egypt</span>
                             </div>
                             <div>
                                 <span class="contact__icon"><i class="fas fa-envelope"></i></span>
-                                <span>Email<br>zakariaelkashef2020@gmail.com</span>
+                                <span class="conact__title">Email<br>zakariaelkashef2020@gmail.com</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 send-message"  data-aos="fade-up-left" data-aos-duration="2000">
                         <h4>message me</h4>
                         <div class="contact-form">
-                            <form>
-                                <input type="text" placeholder="Name">
-                                <input type="email" placeholder="Email">
-                                <input type="text" placeholder="Subject">
-                                <textarea cols="30" rows="10" placeholder="Describe your project"></textarea>
+                            <form  action="https://formspree.io/f/mdoyeony" method="POST">
+                                <input type="text" name="name" placeholder="Name">
+                                <input type="email" name="email" placeholder="Email">
+                                <input type="text" name="subject" placeholder="Subject">
+                                <textarea name="message" cols="30" rows="10" placeholder="Describe your project"></textarea>
                                 <button type="submit" class="main-btn">send message</button>
                             </form>
                         </div>

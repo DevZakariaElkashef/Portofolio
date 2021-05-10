@@ -78,8 +78,10 @@
 
   /* contact */
   .send-message{
-    margin-top: 3rem;
     text-align: center;
+  }
+  .get-touch{
+    margin-bottom: 1rem;
   }
 }
 @media screen and (max-width: 540px) {
@@ -132,6 +134,9 @@
   .about-div-img{
     width: 300px;
   }
-  .about__text p{
+  /* projects */
+  .project{
+    width: 250px;
+    margin: auto;
   }
 }
