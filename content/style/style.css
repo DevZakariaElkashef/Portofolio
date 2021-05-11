@@ -20,7 +20,7 @@
 :root {
   --mainColor: #086efd;
   --mainWhite: #fff;
-  --mainDark: #202529;
+  --mainDark: #2a2e31;
   --mainTransition: all 300ms ease-in-out;
   --boxShadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   --sectionPadding: 5rem 0;
@@ -210,7 +210,7 @@ nav a {
   width: 400px;
   overflow: hidden;
   border-radius: 5px;
-  /* margin: auto; */
+  box-shadow: var(--boxShadow);
 }
 
 .about__text h3 {
@@ -218,7 +218,9 @@ nav a {
 }
 .about__text p {
   text-align: justify;
-  margin: 2rem 0;
+  margin: 1rem 0;
+  font-size: 17px;
+  text-transform: capitalize;
 }
 .about__text h3 span {
   color: var(--mainColor);
@@ -349,6 +351,7 @@ nav a {
 .contact__icons > div{
   display: flex;
   align-items: center;
+  margin: 0.5rem 0;
 }
 .contact__icons span{
   display: block;
