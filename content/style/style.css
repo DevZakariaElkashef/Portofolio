@@ -72,6 +72,13 @@ li {
   background: none;
   color: var(--mainDark);
 }
+
+.cv-btn{
+  background: none;
+}
+.cv-btn:hover{
+  background: var(--mainColor);
+}
 h2 {
   text-align: center;
   margin: 3rem 0;
@@ -113,7 +120,7 @@ header > .container{
 
 .header__img {
   position: absolute;
-  right: 0px;
+  right: 0;
   bottom: 0;
   width: 50rem;
 }
@@ -152,6 +159,8 @@ header > .container{
 .hero .btns .main-btn:hover{
   color: var(--mainWhite);
 }
+
+
 /* end of hero */
 
 /* icons */
@@ -237,6 +246,13 @@ nav a {
 }
 .about__text .btns a:first-child {
   margin-left: 0;
+}
+
+.about__text .cv-btn{
+  color: var(--mainDark);
+}
+.about__text .cv-btn:hover{
+  color: var(--mainWhite);
 }
 /* end of about-section */
 
