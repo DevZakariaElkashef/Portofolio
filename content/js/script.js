@@ -1,3 +1,22 @@
+
+  // loader
+// $(window).on("load",function(){
+//   $(".water-container").fadeOut(1000);
+//   $('header').fadeIn(3000)
+//   $('main').fadeIn(3000)
+//   $('footer').fadeIn(3000)
+// })
+
+
+
+
+
+
+
+
+
+
+
 // navbar
 const navBar = document.querySelector(".navbar");
 const navHeight = navBar.getBoundingClientRect().height;
@@ -85,3 +104,4 @@ if (glide)
       },
     },
   }).mount();
+
