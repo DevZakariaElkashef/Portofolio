@@ -165,8 +165,6 @@ header {
   background: var(--mainDark);
   position: relative;
 }
-header > .container {
-}
 
 .header__img {
   position: absolute;
@@ -370,6 +368,18 @@ nav a {
 }
 .jquery {
   width: 50%;
+}
+.Bootstrap{
+  width: 95%;
+}
+.SASS{
+  width: 85%;
+}
+.Photoshop{
+  width: 70%;
+}
+.Git-Github{
+  width: 90%;
 }
 .line span {
   position: absolute;
@@ -609,3 +619,33 @@ nav a {
   color: #ccc;
 }
 /* end of counter */
+
+/* services */
+.bg-white{
+  background: var(--mainWhite) !important;
+}
+.bg-white h2{
+  color: var(--mainDark);
+}
+/* end of services */
+
+.filter{
+  margin:4rem 0;
+}
+.filter-ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+.filter-ul li {
+  border: 1px solid var(--mainColor);
+  border-radius: 5px;
+  padding: 0.58rem 0.8em;
+  background: none;
+  color: var(--mainDark);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.filter-active{
+  background: var(--mainColor) !important;
+  color: var(--mainWhite) !important;
+}
