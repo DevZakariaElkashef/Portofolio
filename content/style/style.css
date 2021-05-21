@@ -18,7 +18,7 @@
 }
 
 :root {
-  --mainColor: #086efd;
+  --mainColor: rgb(8,130,253);
   --mainWhite: #fff;
   --mainDark: #2a2e31;
   --mainTransition: all 300ms ease-in-out;
@@ -513,18 +513,99 @@ nav a {
 .main-footer {
   background: var(--mainDark);
   color: var(--mainWhite);
-  padding: 1rem;
+  padding: 2rem;
 }
 .main-footer p {
   text-transform: capitalize;
   text-align: center;
-  font-size: 18px;
+  font-size: 13px;
   letter-spacing: 1px;
-  margin: 0;
+  padding-top: 2rem;
+
 }
 .main-footer p span {
   color: var(--mainColor);
   font-weight: bolder;
+  text-transform: uppercase;
+}
+.main-footer a{
+  color: var(--mainWhite);
+  transition: var(--mainTransition);
+}
+.main-footer a:hover{
+  color:var(--mainColor);
+}
+.main-footer .footer__icons a{
+  padding: 8px 10px;
+  border-radius: 2px;
+}
+.main-footer  span{
+  margin-right: 1rem;
+}
+.main-footer .footer__icons a:hover{
+  background: var(--mainColor);
+  color: var(--mainWhite);
 }
 
+.last-footer p{
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  background: var(--mainColor);
+  color: var(--mainWhite);
+}
+/* end of footer */
 
+/* counter */
+.counter-section{
+  background: var(--mainDark);
+  padding: 20px;
+}
+.counter-section h2{
+  color: var(--mainWhite);
+}
+.counter-up{
+  min-height: 50vh;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.counter-up .content{
+  z-index: 1;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.counter-up .content .box{
+  width: calc(25% - 30px);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px dashed var( --mainWhite);
+}
+.content .box .icon{
+  font-size: 48px;
+  color: var(--mainColor);
+}
+.content .box .counter{
+  font-size: 50px;
+  font-weight: 500;
+  color: var(--mainColor);
+  font-family: sans-serif;
+}
+.content .box .text{
+  font-weight: 400;
+  color: #ccc;
+}
+/* end of counter */
