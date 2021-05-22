@@ -628,13 +628,15 @@ nav a {
   color: var(--mainDark);
 }
 /* end of services */
+/* filter */
 
 .filter{
   margin:4rem 0;
 }
 .filter-ul{
-  display: flex;
+  display:flex;
   justify-content: space-evenly;
+  padding: 0;
 }
 .filter-ul li {
   border: 1px solid var(--mainColor);
@@ -649,3 +651,30 @@ nav a {
   background: var(--mainColor) !important;
   color: var(--mainWhite) !important;
 }
+
+/* end of filter */
+
+/* customer */
+.customer-section{
+  background: var(--mainDark);
+  color: var(--mainWhite);
+}
+.customer{
+  width: 200px;
+  margin: auto;
+}
+.customer img{
+  border-radius: 50%;
+}
+.customer span{
+  display: block;
+  margin: 1rem 0; 
+  text-align: center;
+  color:var(--mainColor);
+}
+.customer p{
+  width: 90%;
+  margin:auto;
+  text-align: justify;
+}
+/* customer */
