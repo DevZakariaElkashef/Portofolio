@@ -57,7 +57,7 @@
 
 @media screen and (max-width:991px) {
   nav{
-    background: #086efd;
+    background: #0882fd;
   }
 }
 @media screen and (max-width: 768px) {
@@ -149,8 +149,11 @@
     margin: auto;
   }
   .main-footer p{
-    font-size: 12px;
+    font-size: 12px ;
   
+  }
+  .last-footer{
+    font-size: 12px;
   }
   .main-footer .footer__icons span{
     display: block;

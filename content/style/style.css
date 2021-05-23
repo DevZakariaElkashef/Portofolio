@@ -18,7 +18,7 @@
 }
 
 :root {
-  --mainColor: rgb(8,130,253);
+  --mainColor: #0882fd;
   --mainWhite: #fff;
   --mainDark: #2a2e31;
   --mainTransition: all 300ms ease-in-out;
