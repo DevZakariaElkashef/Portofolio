@@ -103,7 +103,7 @@ h2::after {
   top: 0;
   left: 0;
   width: 100%;
-  background: #086efd;
+  background: var(--mainColor);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   z-index: 2;
 }
@@ -370,13 +370,16 @@ nav a {
   width: 50%;
 }
 .Bootstrap{
-  width: 95%;
+  width: 90%;
 }
 .SASS{
-  width: 85%;
+  width: 75%;
 }
-.Photoshop{
+.Materalize{
   width: 70%;
+}
+.Adobe-XD{
+  width: 80%;
 }
 .Git-Github{
   width: 90%;
@@ -406,7 +409,7 @@ nav a {
   width: 330px;
   margin: auto;
   position: relative;
-  background: rgba(0, 0, 0, 0.548);
+  background: rgba(0, 0, 0, 0.950);
   overflow: hidden;
   border: 3px solid var(--mainColor);
   border-radius: 5px;
