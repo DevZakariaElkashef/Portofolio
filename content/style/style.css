@@ -424,9 +424,11 @@ nav a {
   transform: translate(-50%, -50%);
   width: 100%;
   text-transform: capitalize;
-  color: var(--mainWhite);
   opacity: 0;
   transition: all 4s ease;
+}
+.img-text a{
+  color: var(--mainWhite);
 }
 
 .img-text h5 {
@@ -476,7 +478,7 @@ nav a {
 .get-touch {
   text-transform: capitalize;
 }
-.contact__icons > div {
+.contact__icons > div, .contact__icons > a {
   display: flex;
   align-items: center;
   margin: 0.5rem 0;
@@ -488,6 +490,9 @@ nav a {
   font-size: 28px;
   color: var(--mainColor);
   width: 30px;
+}
+.contact__icons a{
+  color: var(--mainDark);
 }
 .conact__title {
   margin-left: 15px;

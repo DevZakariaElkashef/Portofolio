@@ -162,29 +162,31 @@
                                 <span class="contact__icon"><i class="fas fa-map-marker-alt"></i></span>
                                 <span class="conact__title">Address<br>Egypt</span>
                             </div>
-                            <div>
-                                <a href="mailto:zakariaelkashef2020@gmail.com" class="contact__icon"><i class="fas fa-envelope"></i></a>
+                            <a  href="mailto:zakariaelkashef2020@gmail.com" >
+                                <span class="contact__icon"><i class="fas fa-envelope"></i></span>
                                 <span class="conact__title">Email<br>zakariaelkashef2020@gmail.com</span>
-                            </div>
-                            <div>
-                                <a href="tel:+201210987036" class="contact__icon"><i class="fas fa-phone"></i></a>
+                            </a>
+                            <a href="tel:+201210987036">
+                                <span class="contact__icon"><i class="fas fa-phone"></i></span>
                                 <span class="conact__title">Phone<br>+201210987036</span>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-6 send-message"  data-aos="fade-up-left" data-aos-duration="2000">
                         <h4>message me</h4>
                         <div class="contact-form">
-                            <form  action="https://formspree.io/f/mdoyeony" method="POST">
-                                <input type="text" name="name" placeholder="Name">
-                                <input type="email" name="email" placeholder="Email">
-                                <input type="text" name="subject" placeholder="Subject">
-                                <textarea name="message" cols="30" rows="10" placeholder="Describe your project"></textarea>
-                                <button type="submit" class="main-btn">send message</button>
+                            <div class="message"></div>
+                            <form id="form" action="https://formspree.io/f/mdoyeony" method="POST">
+                                <input id="value" required type="text" name="name" placeholder="Name">
+                                <input id="value" required type="email" name="email" placeholder="Email">
+                                <input id="valuerequired type="text" name="subject" placeholder="Subject">
+                                <textarea id="value" name="message" cols="30" rows="10" placeholder="Describe your project"></textarea>
+                                <button id="form-btn" type="submit" class="main-btn">send message</button>
                             </form>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </section>
         <!-- end of contact section -->
